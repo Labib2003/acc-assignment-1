@@ -11,7 +11,7 @@ app.use(cors());
 app.use("/api/user", userRoutes);
 
 app.all("*", (req, res) => {
-    res.send("Hello world");
+    res.send("Welcome to my express random user server. Go to /api/user to access the api endpoints.");
 });
 
 app.listen(port, () => {
