@@ -50,6 +50,44 @@ module.exports.addUser = (req, res) => {
     });
 };
 
+module.exports.updateSingleUser = (req, res) => {
+    const { id } = req.params;
+    const update = req.body;
+    if (!id) return res.status(500).send({
+        message: {
+            success: false,
+            message: "Please send the id of the user as parameter."
+        }
+    });
+    if (update) return res.status(500).send({
+        message: {
+            success: false,
+            message: "Please send a json with the updated data in the body."
+        }
+    });
+    const userToBeUpdated = data.find(d => d.id == id);
+    const index = data.indexOf(userToBeUpdated);
+    console.log(index);
+    if (!userToBeUpdated) return res.status(404).send({
+        message: {
+            success: false,
+            message: "User with this id does not exist."
+        }
+    });
+    const updatedUser = { ...userToBeUpdated, ...update };
+    data[index] = updatedUser;
+    fs.writeFileSync("./data.json", JSON.stringify(data));
+    res.status(200).send({
+        message: {
+            success: true,
+            message: "User updated successfully."
+        },
+        data: {
+            updatedUser
+        }
+    });
+}
+
 module.exports.deleteUser = (req, res) => {
     const { id } = req.body;
     if (!id) return res.status(500).send({
