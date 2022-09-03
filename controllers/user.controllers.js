@@ -136,7 +136,7 @@ module.exports.deleteUser = (req, res) => {
     if (!id) return res.status(500).send({
         message: {
             success: false,
-            message: "Please provide an id in the body."
+            message: "Please provide an json with id property in the body."
         }
     });
     const userToBeDeleted = data.find(d => d.id === id);
