@@ -16,14 +16,14 @@ module.exports.getRandomUser = (req, res) => {
 
 module.exports.getAllUsers = (req, res) => {
     let { limit } = req.query;
-    if (!limit || parseInt(limit) > data.length) limit = data.length + 1;
+    if (!limit || parseInt(limit) > data.length) limit = data.length;
     res.status(200).send({
         message: {
             success: true,
             message: "Users found."
         },
         data: {
-            users: data.slice(0, parseInt(limit - 1))
+            users: data.slice(0, parseInt(limit))
         }
     });
 };
