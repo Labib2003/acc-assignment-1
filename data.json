@@ -1,0 +1,82 @@
+[
+    {
+        "id": 0,
+        "gender": "male",
+        "name": "Labib",
+        "contact": 1234567890,
+        "address": "Dhaka",
+        "photoUrl": "https://cdn-icons-png.flaticon.com/512/21/21104.png"
+    },
+    {
+        "id": 2,
+        "gender": "male",
+        "name": "John Doe",
+        "contact": 1234567890,
+        "address": "Manchester",
+        "photoUrl": "https://cdn-icons-png.flaticon.com/512/21/21104.png"
+    },
+    {
+        "id": 3,
+        "gender": "male",
+        "name": "Sun Tsu",
+        "contact": 1234567890,
+        "address": "Shanghai",
+        "photoUrl": "https://cdn-icons-png.flaticon.com/512/21/21104.png"
+    },
+    {
+        "id": 4,
+        "gender": "male",
+        "name": "Carl",
+        "contact": 1234567890,
+        "address": "Grove Street",
+        "photoUrl": "https://cdn-icons-png.flaticon.com/512/21/21104.png"
+    },
+    {
+        "id": 5,
+        "gender": "male",
+        "name": "Serj Tankian",
+        "contact": 1234567890,
+        "address": "Armenia",
+        "photoUrl": "https://cdn-icons-png.flaticon.com/512/21/21104.png"
+    },
+    {
+        "id": 6,
+        "gender": "male",
+        "name": "Daron Malakian",
+        "contact": 1234567890,
+        "address": "Armenia",
+        "photoUrl": "https://cdn-icons-png.flaticon.com/512/21/21104.png"
+    },
+    {
+        "id": 7,
+        "gender": "male",
+        "name": "John Dolmayan",
+        "contact": 1234567890,
+        "address": "Armenia",
+        "photoUrl": "https://cdn-icons-png.flaticon.com/512/21/21104.png"
+    },
+    {
+        "id": 8,
+        "gender": "male",
+        "name": "Shavo Odadjian",
+        "contact": 1234567890,
+        "address": "Armenia",
+        "photoUrl": "https://cdn-icons-png.flaticon.com/512/21/21104.png"
+    },
+    {
+        "id": 9,
+        "gender": "male",
+        "name": "Dave Mustain",
+        "contact": 1234567890,
+        "address": "California",
+        "photoUrl": "https://cdn-icons-png.flaticon.com/512/21/21104.png"
+    },
+    {
+        "id": 10,
+        "gender": "male",
+        "name": "Kiko Luciero",
+        "contact": 1234567890,
+        "address": "Brazil",
+        "photoUrl": "https://cdn-icons-png.flaticon.com/512/21/21104.png"
+    }
+]
