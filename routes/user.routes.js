@@ -11,5 +11,6 @@ router.route("/").all((req, res) => {
 
 router.route("/random").get(userControllers.getRandomUser);
 router.route("/all").get(userControllers.getAllUsers);
+router.route("/save").post(userControllers.addUser);
 
 module.exports = router;
