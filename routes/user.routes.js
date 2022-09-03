@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.route("/").all((req, res) => {
     res.json({
-        body: "hello world",
+        body: "user route",
     })
 });
 
