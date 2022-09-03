@@ -73,7 +73,7 @@ module.exports.deleteUser = (req, res) => {
             message: "User deleted successfully."
         },
         data: {
-            users: updatedData
+            users: updatedData 
         }
     });
 }
