@@ -47,5 +47,33 @@ module.exports.addUser = (req, res) => {
         data: {
             users: data
         }
+    });
+};
+
+module.exports.deleteUser = (req, res) => {
+    const { id } = req.body;
+    if (!id) return res.status(500).send({
+        message: {
+            success: false,
+            message: "Please provide an id in the body."
+        }
+    });
+    const userToBeDeleted = data.find(d => d.id === id);
+    if (!userToBeDeleted) return res.status(404).send({
+        message: {
+            success: false,
+            message: "User with this id does not exist."
+        }
     })
+    const updatedData = data.filter(d => d.id !== id);
+    fs.writeFileSync("./data.json", JSON.stringify(updatedData));
+    res.status(200).send({
+        message: {
+            success: true,
+            message: "User deleted successfully."
+        },
+        data: {
+            users: updatedData
+        }
+    });
 }
